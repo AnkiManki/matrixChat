@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		6F323F218F72BB4CD8140467 /* Pods_MatrixChat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87C78BD1ACCFA09819E1704E /* Pods_MatrixChat.framework */; };
+		9D00751C1F45A8FC00BED7AB /* CreatePostVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D00751B1F45A8FC00BED7AB /* CreatePostVC.swift */; };
+		9D00751E1F45AC1E00BED7AB /* UIViewExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D00751D1F45AC1E00BED7AB /* UIViewExt.swift */; };
 		9D4D7F8A1F443F5C00DB2892 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D4D7F891F443F5C00DB2892 /* AppDelegate.swift */; };
 		9D4D7F8C1F443F5C00DB2892 /* FeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D4D7F8B1F443F5C00DB2892 /* FeedVC.swift */; };
 		9D4D7F8E1F443F5C00DB2892 /* GroupsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D4D7F8D1F443F5C00DB2892 /* GroupsVC.swift */; };
@@ -27,6 +29,8 @@
 /* Begin PBXFileReference section */
 		0F41FF222E12E0B674D5439A /* Pods-MatrixChat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MatrixChat.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MatrixChat/Pods-MatrixChat.debug.xcconfig"; sourceTree = "<group>"; };
 		87C78BD1ACCFA09819E1704E /* Pods_MatrixChat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MatrixChat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D00751B1F45A8FC00BED7AB /* CreatePostVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePostVC.swift; sourceTree = "<group>"; };
+		9D00751D1F45AC1E00BED7AB /* UIViewExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExt.swift; sourceTree = "<group>"; };
 		9D4D7F861F443F5C00DB2892 /* MatrixChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MatrixChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D4D7F891F443F5C00DB2892 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9D4D7F8B1F443F5C00DB2892 /* FeedVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedVC.swift; sourceTree = "<group>"; };
@@ -102,8 +106,6 @@
 				9D4D7F9E1F4440F900DB2892 /* View */,
 				9D4D7F9D1F4440ED00DB2892 /* Controller */,
 				9D4D7F891F443F5C00DB2892 /* AppDelegate.swift */,
-				9D4D7F8B1F443F5C00DB2892 /* FeedVC.swift */,
-				9D4D7F8D1F443F5C00DB2892 /* GroupsVC.swift */,
 				9D4D7F8F1F443F5C00DB2892 /* Main.storyboard */,
 				9D4D7F921F443F5C00DB2892 /* Assets.xcassets */,
 				9D4D7F941F443F5C00DB2892 /* LaunchScreen.storyboard */,
@@ -116,9 +118,12 @@
 		9D4D7F9D1F4440ED00DB2892 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				9D4D7F8D1F443F5C00DB2892 /* GroupsVC.swift */,
+				9D4D7F8B1F443F5C00DB2892 /* FeedVC.swift */,
 				9DC250E51F44567C000BAC2F /* AuthVC.swift */,
 				9DC250E71F4456B1000BAC2F /* LoginVC.swift */,
 				9DCB0BE31F459F9B0095CCFB /* MeVC.swift */,
+				9D00751B1F45A8FC00BED7AB /* CreatePostVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -142,6 +147,7 @@
 		9D4D7FA01F44411C00DB2892 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				9D00751D1F45AC1E00BED7AB /* UIViewExt.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -278,6 +284,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D00751E1F45AC1E00BED7AB /* UIViewExt.swift in Sources */,
 				9DCB0BE41F459F9B0095CCFB /* MeVC.swift in Sources */,
 				9DC250E61F44567C000BAC2F /* AuthVC.swift in Sources */,
 				9D4D7F8E1F443F5C00DB2892 /* GroupsVC.swift in Sources */,
@@ -285,6 +292,7 @@
 				9D9326ED1F45864C0031FA9C /* AuthService.swift in Sources */,
 				9D4D7F8A1F443F5C00DB2892 /* AppDelegate.swift in Sources */,
 				9D9413A01F45845800B32BA6 /* ShadowView.swift in Sources */,
+				9D00751C1F45A8FC00BED7AB /* CreatePostVC.swift in Sources */,
 				9D4D7F8C1F443F5C00DB2892 /* FeedVC.swift in Sources */,
 				9DC250EA1F445704000BAC2F /* InsetTextField.swift in Sources */,
 				9DC250E21F444433000BAC2F /* DataService.swift in Sources */,

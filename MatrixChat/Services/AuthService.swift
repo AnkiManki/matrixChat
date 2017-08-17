@@ -19,7 +19,6 @@ class AuthService {
                 userCreationComplete(false, error)
                 return
             }
-
             //Passing user data to our firebase DB
             let userData = ["provider": user.providerID, "email": user.email]
             DataService.instance.createDBUser(uid: user.uid, userData: userData)
@@ -30,7 +29,6 @@ class AuthService {
     
     func loginUser(withEmail email: String, andPassword password: String, loginComplete: @escaping (_ status: Bool, _ error: Error?) -> ()){
         Auth.auth().signIn(withEmail: email, password: password) { (user, error) in
-            
             if error != nil {
                 loginComplete(false, error)
                 return

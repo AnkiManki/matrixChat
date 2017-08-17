@@ -43,5 +43,25 @@ class DataService {
     func createDBUser(uid: String, userData: Dictionary<String, Any>){
         REF_USERS.child(uid).updateChildValues(userData)
     }
+    
+    //this function will upload posto to firebase
+    func uploadPost(withMessage message: String, forUID uid: String, withGroupKey groupkey: String?, sendComplete: @escaping (_ status: Bool) -> ()){
+        
+        if groupkey != nil {
+            
 
+        } else {
+            REF_FEED.childByAutoId().updateChildValues(["content": message, "senderId": uid])
+            sendComplete(true)
+        }
+        
+    }
+
+    
+    
+    
+    
+    
+    
+    
 }
