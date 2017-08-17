@@ -20,13 +20,13 @@ class CreateGroupsVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
     }
 
     @IBAction func doneBtnPressed(_ sender: UIButton) {
     }
     
     @IBAction func closeBtnPressed(_ sender: UIButton) {
+        self.dismiss(animated: true, completion: nil)
     }
     
     
