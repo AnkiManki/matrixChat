@@ -21,6 +21,7 @@
 		9DC250E61F44567C000BAC2F /* AuthVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DC250E51F44567C000BAC2F /* AuthVC.swift */; };
 		9DC250E81F4456B1000BAC2F /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DC250E71F4456B1000BAC2F /* LoginVC.swift */; };
 		9DC250EA1F445704000BAC2F /* InsetTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DC250E91F445704000BAC2F /* InsetTextField.swift */; };
+		9DCB0BE41F459F9B0095CCFB /* MeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DCB0BE31F459F9B0095CCFB /* MeVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +42,7 @@
 		9DC250E51F44567C000BAC2F /* AuthVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthVC.swift; sourceTree = "<group>"; };
 		9DC250E71F4456B1000BAC2F /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		9DC250E91F445704000BAC2F /* InsetTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsetTextField.swift; sourceTree = "<group>"; };
+		9DCB0BE31F459F9B0095CCFB /* MeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeVC.swift; sourceTree = "<group>"; };
 		C9CFC2A326DC338A168B8BE3 /* Pods-MatrixChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MatrixChat.release.xcconfig"; path = "Pods/Target Support Files/Pods-MatrixChat/Pods-MatrixChat.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -116,6 +118,7 @@
 			children = (
 				9DC250E51F44567C000BAC2F /* AuthVC.swift */,
 				9DC250E71F4456B1000BAC2F /* LoginVC.swift */,
+				9DCB0BE31F459F9B0095CCFB /* MeVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -275,6 +278,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9DCB0BE41F459F9B0095CCFB /* MeVC.swift in Sources */,
 				9DC250E61F44567C000BAC2F /* AuthVC.swift in Sources */,
 				9D4D7F8E1F443F5C00DB2892 /* GroupsVC.swift in Sources */,
 				9DC250E81F4456B1000BAC2F /* LoginVC.swift in Sources */,
