@@ -5,7 +5,7 @@
 //  Created by Stefan Markovic on 8/16/17.
 //  Copyright © 2017 Stefan Markovic. All rights reserved.
 //
-// This file which will manage our database in firebase
+// This file will manage our database in firebase
 
 import Foundation
 import Firebase

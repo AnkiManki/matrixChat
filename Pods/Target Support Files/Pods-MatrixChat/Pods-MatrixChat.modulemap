@@ -1,0 +1,6 @@
+framework module Pods_MatrixChat {
+  umbrella header "Pods-MatrixChat-umbrella.h"
+
+  export *
+  module * { export * }
+}
