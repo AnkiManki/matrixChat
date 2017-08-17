@@ -15,6 +15,20 @@ class AuthVC: UIViewController {
 
     }
 
-
+    //when clicked on sign in with email it will present the AuthVC
+    @IBAction func signInWithEmail(_ sender: UIButton) {
+        let loginVC = storyboard?.instantiateViewController(withIdentifier: "LoginVC")
+        present(loginVC!, animated: true, completion: nil)
+    }
+    
+    @IBAction func signInWithGoogle(_ sender: UIButton) {
+        
+    }
+    
+    @IBAction func signInWithFacebook(_ sender: UIButton) {
+        
+    }
+    
+    
 
 }

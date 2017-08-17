@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13178.6" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="NRc-Ue-Xhk">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13178.6" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -127,6 +127,9 @@
                                                 <state key="normal" title="LOGIN WITH FB">
                                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="signInWithFacebook:" destination="NRc-Ue-Xhk" eventType="touchUpInside" id="XxE-UB-nOt"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gOG-6B-eAi">
                                                 <rect key="frame" x="0.0" y="144" width="303" height="62"/>
@@ -135,6 +138,9 @@
                                                 <state key="normal" title="LOGIN WITH GOOGLE">
                                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="signInWithGoogle:" destination="NRc-Ue-Xhk" eventType="touchUpInside" id="qoE-Yg-bl4"/>
+                                                </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="OR" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8No-qR-LYT">
                                                 <rect key="frame" x="0.0" y="216" width="303" height="62"/>
@@ -153,6 +159,9 @@
                                         <state key="normal" title=" by email" image="emailIcon">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="signInWithEmail:" destination="NRc-Ue-Xhk" eventType="touchUpInside" id="f6s-s7-vfK"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.25490196078431371" green="0.27058823529411763" blue="0.31372549019607843" alpha="1" colorSpace="calibratedRGB"/>
@@ -198,6 +207,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wxP-bs-cyv">
                                 <rect key="frame" x="16" y="25" width="21" height="22"/>
                                 <state key="normal" image="close"/>
+                                <connections>
+                                    <action selector="closeBtn:" destination="Tiz-Rg-bNM" eventType="touchUpInside" id="jxb-DA-4En"/>
+                                </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Zhz-gd-RMs">
                                 <rect key="frame" x="20" y="67" width="335" height="161"/>
@@ -239,6 +251,9 @@
                                 <state key="normal" title="SIGN IN">
                                     <color key="titleColor" red="0.015686274510000001" green="0.6705882353" blue="0.7725490196" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="signInBtn:" destination="Tiz-Rg-bNM" eventType="touchUpInside" id="r55-IQ-B3Q"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.16078431369999999" green="0.16862745100000001" blue="0.20392156859999999" alpha="1" colorSpace="calibratedRGB"/>
@@ -253,6 +268,10 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="qkd-LE-MA0"/>
                     </view>
+                    <connections>
+                        <outlet property="emailField" destination="asv-vE-EwH" id="PZX-jX-skx"/>
+                        <outlet property="passwordField" destination="pPW-7V-6Q4" id="e2E-4R-yKZ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GYs-pl-BKr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
