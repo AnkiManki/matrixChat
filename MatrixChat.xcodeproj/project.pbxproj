@@ -10,6 +10,7 @@
 		6F323F218F72BB4CD8140467 /* Pods_MatrixChat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87C78BD1ACCFA09819E1704E /* Pods_MatrixChat.framework */; };
 		9D00751C1F45A8FC00BED7AB /* CreatePostVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D00751B1F45A8FC00BED7AB /* CreatePostVC.swift */; };
 		9D00751E1F45AC1E00BED7AB /* UIViewExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D00751D1F45AC1E00BED7AB /* UIViewExt.swift */; };
+		9D29EBD51F45D72400DB86F3 /* CreateGroupsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D29EBD41F45D72300DB86F3 /* CreateGroupsVC.swift */; };
 		9D4D7F8A1F443F5C00DB2892 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D4D7F891F443F5C00DB2892 /* AppDelegate.swift */; };
 		9D4D7F8C1F443F5C00DB2892 /* FeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D4D7F8B1F443F5C00DB2892 /* FeedVC.swift */; };
 		9D4D7F8E1F443F5C00DB2892 /* GroupsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D4D7F8D1F443F5C00DB2892 /* GroupsVC.swift */; };
@@ -33,6 +34,7 @@
 		87C78BD1ACCFA09819E1704E /* Pods_MatrixChat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MatrixChat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D00751B1F45A8FC00BED7AB /* CreatePostVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePostVC.swift; sourceTree = "<group>"; };
 		9D00751D1F45AC1E00BED7AB /* UIViewExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExt.swift; sourceTree = "<group>"; };
+		9D29EBD41F45D72300DB86F3 /* CreateGroupsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateGroupsVC.swift; sourceTree = "<group>"; };
 		9D4D7F861F443F5C00DB2892 /* MatrixChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MatrixChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D4D7F891F443F5C00DB2892 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9D4D7F8B1F443F5C00DB2892 /* FeedVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedVC.swift; sourceTree = "<group>"; };
@@ -128,6 +130,7 @@
 				9DC250E71F4456B1000BAC2F /* LoginVC.swift */,
 				9DCB0BE31F459F9B0095CCFB /* MeVC.swift */,
 				9D00751B1F45A8FC00BED7AB /* CreatePostVC.swift */,
+				9D29EBD41F45D72300DB86F3 /* CreateGroupsVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -297,6 +300,7 @@
 				9DC250E81F4456B1000BAC2F /* LoginVC.swift in Sources */,
 				9D9326ED1F45864C0031FA9C /* AuthService.swift in Sources */,
 				9D4D7F8A1F443F5C00DB2892 /* AppDelegate.swift in Sources */,
+				9D29EBD51F45D72400DB86F3 /* CreateGroupsVC.swift in Sources */,
 				9D73CF911F45BFB900321C47 /* FeedCell.swift in Sources */,
 				9D9413A01F45845800B32BA6 /* ShadowView.swift in Sources */,
 				9D00751C1F45A8FC00BED7AB /* CreatePostVC.swift in Sources */,
