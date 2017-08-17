@@ -24,7 +24,7 @@ class FeedVC: UIViewController {
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         DataService.instance.getAllFeedMessages { (returnedMessagesArray) in
-            self.messageArray = returnedMessagesArray
+            self.messageArray = returnedMessagesArray.reversed()
             self.tableView.reloadData()
         }
     }
@@ -32,7 +32,6 @@ class FeedVC: UIViewController {
 
 
 }
-
 
 
 extension FeedVC: UITableViewDelegate, UITableViewDataSource {
@@ -53,10 +52,6 @@ extension FeedVC: UITableViewDelegate, UITableViewDataSource {
         cell.configureCell(profileImage: image!, email: message.senderId, content: message.content)
         return cell
     }
-    
-    
-    
-    
-    
+
     
 }
